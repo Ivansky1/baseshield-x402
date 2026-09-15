@@ -20,6 +20,7 @@ app = FastAPI(
     title="BaseShield Token Security Oracle",
     description="Deterministic on-chain honeypot detection, privilege inspection, and risk scoring on Base mainnet.",
     version="1.0.0",
+    redirect_slashes=False,
 )
 
 app.add_middleware(

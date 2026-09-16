@@ -121,6 +121,7 @@ async def self_test():
         "protocol": "x402", "version": 2, "network": CHAIN_ID,
         "payTo": PAYEE_ADDRESS, "asset": USDC_BASE, "amount_atomic": PRICE_ATOMIC,
         "amount_usd": PRICE_HUMAN, "live_payment_tested": False,
+        "facilitator_configured": bool(payment.facilitator.url),
     }
 
 
